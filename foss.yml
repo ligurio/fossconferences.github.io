@@ -1,0 +1,95 @@
+title: Free and opensource software
+conferences:
+  - title: FOSSETCON
+    url: http://fossetcon.org/
+    date: 2015-11-19
+  - title: LinuxPiter
+    url: http://www.linuxpiter.ru/
+    date: 2015-11-21
+  - title: DockerCon
+    url: http://dockercon.com/
+    date: 2015-11-16
+  - title: HighLoad
+    url: http://www.highload.ru/
+    date: 2015-11-02
+  - title: "ContainerDays NYC"
+    url: http://dynamicinfradays.org/events/2015-nyc/
+    date: 2015-10-29
+  - title: OSCON
+    url: http://www.oscon.com/
+    date: 2015-10-26
+  - title: "LinuxCon Europe"
+    url: http://events.linuxfoundation.org/events/linuxcon-europe
+    date: 2015-10-05
+  - title: "Конференция разработчиков свободных программ"
+    url: http://www.altlinux.ru/news/archive/2015/08/item/743/
+    date: 2015-10-16
+  - title: "The Software Circus"
+    url: http://www.softwarecircus.io/
+    date: 2015-09-09
+  - title: "Container Camp"
+    url: https://container.camp/
+    date: 2015-09-11
+  - title: SCALE14x
+    url: http://www.socallinuxexpo.org/scale/14x
+    date: 2015-01-21
+  - title: "Linux Kernel Summit"
+    url: http://events.linuxfoundation.org/events/linux-kernel-summit
+    date: 2015-10-26
+  - title: FOSSCON
+    url: http://fosscon.us/
+    date:
+  - title: "Linux Plumbers"
+    url: http://www.linuxplumbersconf.org/
+    date: 2015-08-19
+  - title: "LinuxCon North America"
+    url: http://events.linuxfoundation.org/events/linuxcon-north-america
+    date: 2015-08-17
+  - title: "Texas Linux Fest"
+    url: https://texaslinuxfest.org/
+    date: 2015-08-15
+  - title: "LinuxFest"
+    url: https://ru.wikipedia.org/wiki/LinuxFest
+    date: 2015-07-27
+  - title: "OpenSource Bridge"
+    url: http://opensourcebridge.org/
+    date: 2015-07-23
+  - title: LVEE
+    url: https://lvee.org/
+    date: 2015-06-25
+  - title: OSday
+    url: http://osday.ru/
+    date: 2015-06-09
+  - title: DevNation
+    url: http://www.devnation.org/
+    date: 2015-06-21
+  - title: "ContainerDays Boston"
+    url: http://dynamicinfradays.org/
+    date: 2015-06-05
+  - title: OpenWest
+    url: http://www.openwest.org/
+    date: 2015-05-07
+  - title: WhaleRider
+    url: http://whalerider.ru/
+    date: 2015-05-21
+  - title: "LinuxFest Northwest"
+    url: http://linuxfestnorthwest.org/
+    date: 2016-04-23
+  - title: POSSCON
+    url: http://posscon.org/
+    date: 2015-04-14
+  - title: "ContainerDays Austin"
+    url: http://containerdaysaustin.com/
+    date: 2015-03-27
+  - title: "Collaboration Summit"
+    url: http://events.linuxfoundation.org/events/collaboration-summit
+    date: 2016-03-29
+  - title: Codefest
+    url: http://codefest.ru/
+    date: 2015-03-28
+  - title: linux.conf.au
+    url: http://linux.conf.au/
+    date: 2016-02-01
+  - title: FOSDEM
+    url: https://fosdem.org/
+    date: 2016-02-30
