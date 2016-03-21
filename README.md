@@ -12,7 +12,7 @@
 * Ubuntu: [Releases](https://wiki.ubuntu.com/Releases), [Development Codenames](https://wiki.ubuntu.com/DevelopmentCodeNames)
 
 
-## Sources about opensource events
+## Sources about opensource conferences
 
 * https://en.wikipedia.org/wiki/List_of_free-software_events
 * http://events.linuxfoundation.org/
