@@ -1,44 +1,46 @@
-- title: "All things open"
+- title: All things open
   url: http://allthingsopen.org/
   startdate: 26.10.2016
-  cfpdate:
+  cfpdate: 15.04.2016
+  cfpurl: http://allthingsopen.org/call-for-speakers/
   location: Raleigh, NC, USA
 - title: CodeFest
   url: http://codefest.ru/
   startdate: 26.03.2016
   cfpdate:
+  cfpurl:
   location: Russia, Novosibirsk
-- title: "Collaboration Summit"
+- title: Collaboration Summit
   url: http://events.linuxfoundation.org/events/collaboration-summit
   startdate: 29.03.2016
   cfpdate:
   location: Lake Tahoe, CA, USA
-- title: "ContainerDays Austin"
-  url: http://containerdaysaustin.com/
+- title: ContainerDays Austin
+  url: http://www.containerdaysaustin.com/2016/
   startdate:
   cfpdate:
-  location:
-- title: "ContainerDays Boston"
-  url: http://dynamicinfradays.org/
-  startdate:
+  location: Austin, TX, USA
+- title: ContainerDays Boston
+  url: http://dynamicinfradays.org/events/2016-boston/
+  startdate: 24.05.2016
   cfpdate:
-  location:
-- title: "ContainerDays NYC"
+  location: Boston, MA, USA
+- title: ContainerDays NYC
   url: http://dynamicinfradays.org/events/2015-nyc/
   startdate:
   cfpdate:
-  location:
-- title: "Container Camp SF"
+  location: New York, NY, USA
+- title: Container Camp SF
   url: https://container.camp/
   startdate: 15.04.2016
   cfpdate:
-  location: Bespoke, San Francisco, USA
-- title: "Container Camp London"
+  location: San Francisco, USA
+- title: Container Camp London
   url: https://container.camp/
   startdate:
   cfpdate:
   location: UK, London
-- title: "Container Camp Sydney"
+- title: Container Camp Sydney
   url: https://container.camp/
   startdate:
   cfpdate:
@@ -56,7 +58,8 @@
 - title: DockerCon
   url: http://dockercon.com/
   startdate: 19.06.2016
-  cfpdate:
+  cfpdate: 18.03.2016
+  cfpurl: https://docs.google.com/forms/d/1bvMlHNkIS1BzO7fofA3jLoJ7xbG1MIViSzwDZjBo0TE/viewform?c=0&w=1
   location: Seattle, WA, USA
 - title: DUMP
   url: http://dump-conf.ru/
@@ -70,7 +73,7 @@
   location: Belgium, Brussels
 - title: FOSSASIA
   url: http://fossasia.org/
-  startdate:
+  startdate: 18.03.2016
   cfpdate:
   location: Singapore
 - title: FOSSETCON
@@ -82,16 +85,17 @@
   url: http://flosscommunitymetrics.org/
   startdate: 15.05.2016
   cfpdate:
-  location: USA, Austin
+  location: Austin, TX, USA
 - title: FOSSCON
   url: http://fosscon.us/
   startdate:
   cfpdate:
   location: Philadelphia, PA, USA
-- title: "Highload Junior"
+- title: Highload Junior
   url: http://junior.highload.ru/
   startdate: 19.05.2016
-  cfpdate:
+  cfpdate: 03.04.2016
+  cfpurl: http://junior.highload.ru/2016/speakers
   location: Moscow, Russia
 - title: HappyDev
   url: http://happydev.ru/
@@ -103,62 +107,68 @@
   startdate: 02.11.2016
   cfpdate:
   location: Moscow, Russia
-- title: "International Conference on Open Source Systems"
+- title: International Conference on Open Source Systems
   url: http://oss2016.org/
   startdate:
-  cfpdate:
+  cfpdate: 04.01.2016
+  cfpurl: http://tutopen.cs.tut.fi/oss2016/uploads/calls/CFP_OSS16.pdf
   location: Germany, Gothenburg
 - title: KubeCon
   url: https://kubecon.io/
   startdate: 10.03.2016
-  cfpdate:
+  cfpdate: 12.02.2016
+  cfpurl: https://kubecon.io/call-for-proposals/
   location: London, UK
 - title: KVM Forum
   url: http://events.linuxfoundation.org/events/kvm-forum
   startdate: 24.08.2016
-  cfpdate:
+  cfpdate: 01.05.2016
+  cfpurl: http://events.linuxfoundation.org/events/kvm-forum/program/cfp
   location: Toronto, Canada
 - title: Linux.conf.au
   url: http://linux.conf.au/
   startdate: 01.02.2016
   cfpdate:
   location: Victoria, Australia
-- title: "LinuxCon Europe"
+- title: LinuxCon Europe
   url: http://events.linuxfoundation.org/events/linuxcon-europe
   startdate: 04.10.2016
-  cfpdate:
+  cfpdate: 17.06.2016
+  cfpurl: http://events.linuxfoundation.org/events/linuxcon-europe/program/cfp
   location: Berlin, Germany
-- title: "LinuxCon North America"
+- title: LinuxCon North America
   url: http://events.linuxfoundation.org/events/linuxcon-north-america
   startdate: 22.08.2016
-  cfpdate:
+  cfpdate: 26.05.2016
+  cfpurl: http://events.linuxfoundation.org/events/linuxcon-north-america/program/cfp
   location: Toronto, Canada
-- title: "LinuxFest"
+- title: LinuxFest
   url: https://ru.wikipedia.org/wiki/LinuxFest
   startdate:
   cfpdate:
   location:
-- title: "LinuxFest Northwest"
+- title: LinuxFest Northwest
   url: http://linuxfestnorthwest.org/
   startdate: 23.04.2016
   cfpdate:
-  location: USA, WA, Bellingham
-- title: "Linux Plumbers"
+  location: Bellingham, WA, USA
+- title: Linux Plumbers
   url: http://www.linuxplumbersconf.org/
   startdate: 02.11.2016
-  cfpdate:
+  cfpdate: 22.07.2016
+  cfpurl: http://www.linuxplumbersconf.org/2016/participate/#cfp
   location: Santa Fe, NM, USA
-- title: "Linux Tage"
+- title: Linux Tage
   url: https://chemnitzer.linux-tage.de/
   startdate: 19.03.2016
   cfpdate:
   location: Germany
-- title: "Linux Storage, Filesystem and Memory Management Summit"
+- title: Linux Storage, Filesystem and Memory Management Summit
   url: http://events.linuxfoundation.org/events/linux-storage-filesystem-and-mm-summit
   startdate: 18.04.2016
   cfpdate:
   location: Raleigh, NC, USA
-- title: "Linux Kernel Summit"
+- title: Linux Kernel Summit
   url: http://events.linuxfoundation.org/events/linux-kernel-summit
   startdate: 31.10.2016
   cfpdate:
@@ -173,27 +183,29 @@
   startdate: 12.02.2016
   cfpdate:
   location: Belarus, Grodno
-- title: "OpenSource Bridge"
+- title: OpenSource Bridge
   url: http://opensourcebridge.org/
   startdate: 21.06.2016
   cfpdate:
-  location: Portland, Oregon, USA
+  cfpurl: http://opensourcebridge.org/events/2016/proposals/new
+  location: Portland, OR, USA
 - title: OpenWest
   url: http://www.openwest.org/
-  startdate:
+  startdate: 13.07.2016
   cfpdate:
-  location:
+  location: Sandy, UT, USA
 - title: OpenSym
   url: http://www.opensym.org/
   startdate: 17.08.2016
   cfpdate:
   location: Berlin, Germany
-- title: "OSCON Austin"
+- title: OSCON Austin
   url: http://www.oscon.com/
-  startdate: 16.05.2016
-  cfpdate:
-  location: USA, Austin
-- title: "OSCON London"
+  startdate: 18.05.2016
+  cfpdate: 21.03.2016
+  cfpurl: http://conferences.oreilly.com/oscon/open-source-us/public/cfp/454
+  location: Austin, TX, USA
+- title: OSCON London
   url: http://www.oscon.com/
   startdate: 17.10.2016
   cfpdate:
@@ -207,7 +219,7 @@
   url: https://www.openstack.org/summit/austin-2016/
   startdate: 25.04.2016
   cfpdate:
-  location: USA, Austin
+  location: Austin, TX, USA
 - title: "Paris OpenSource Summit"
   url: http://opensourcesummit.paris/
   startdate: 18.11.2016
@@ -217,7 +229,7 @@
   url: http://posscon.org/
   startdate: 04.04.2017
   cfpdate:
-  location: USA, Columbia, SC
+  location: Columbia, SC, USA
 - title: RedHat Summit
   url: https://www.redhat.com/en/summit
   startdate: 27.06.2016
@@ -242,7 +254,7 @@
   url: http://www.socallinuxexpo.org/scale/14x
   startdate: 21.01.2016
   cfpdate:
-  location: USA, CA, Pasadena
+  location: Pasadena, CA, USA
 - title: Systemd.Conf
   url: https://systemd.events/
   startdate:
@@ -257,13 +269,13 @@
   url: https://texaslinuxfest.org/
   startdate: 08.07.2016
   cfpdate:
-  location: USA, TX, Austin
+  location: Austin, TX, USA
 - title: WhaleRider
   url: http://whalerider.ru/
   startdate: 19.05.2016
   cfpdate:
   location: Moscow, Russia
-- title: "SergeyB Conf"
+- title: SergeyB Conf
   url: https://bronevichok.ru/
   startdate: 31.03.2016
   cfpdate:

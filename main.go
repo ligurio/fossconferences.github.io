@@ -25,11 +25,11 @@ type Conf struct {
 	URL       string
 	Startdate string
 	CFPDate   string
+	CFPURL    string
 	Location  string
 }
 
 func mkHTML(cnf *[]Conf) {
-	//f, _ := filepath.Abs(html)
 	htmltmpl, err := ioutil.ReadFile(html)
 	if err != nil {
 		panic(err)
@@ -123,7 +123,6 @@ func main() {
 	} else if *format == "html" {
 		mkHTML(&closestConfs)
 	} else if *format == "icalendar" {
-		// mkiCal(&closestConfs)
 		fmt.Printf("Not implemented.")
 	}
 }

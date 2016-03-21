@@ -11,30 +11,49 @@
   <meta name="application-name" content="">
   <link rel="stylesheet" href="main.css">
   <title>Open Source Conferences</title>
+  <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+	<script type="text/javascript">(function () {
+		if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+		if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+			var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+			s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+			s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+			var h = d[g]('body')[0];h.appendChild(s); }})();
+    </script>
 	<header><h1>Open Source Conferences</h1></header>
+	<h2>List of the closest conferences</h2>
 
-<h2>List of the closest conferences</h2>
+	<dl>
+		{{range .}}
+		<dt id="{{.Title}}">
+			<a href="{{.URL}}">{{.Title}}</a>
+		</dt>
 
-<dl>
-	{{range .}}
-	<dt id="{{.Title}}">
-		<a href="{{.URL}}">{{.Title}}</a>
-	</dt>
+		<dd>
+			{{if ne .Location ""}}{{.Location}}{{end}}
+			{{if ne .Startdate ""}}{{.Startdate}}{{end}}
+			{{if ne .CFPDate ""}}{{.CFPDate}}{{end}}
+			<span class="addtocalendar atc-style-blue">
+				<var class="atc_event">
+					<var class="atc_date_start">{{.Startdate}}</var>
+					<var class="atc_date_end"></var>
+					<var class="atc_timezone">Europe/London</var>
+					<var class="atc_title">{{.Title}}</var>
+					<var class="atc_description"></var>
+					<var class="atc_location">{{.Location}}</var>
+					<var class="atc_organizer">Sergey Bronnikov</var>
+					<var class="atc_organizer_email">sergeyb@openvz.org</var>
+				</var>
+			</span>
+		</dd>
+		{{end}}
+	</dl>
 
-	<dd>
-		{{if ne .Location ""}}{{.Location}}{{end}}
-		{{if ne .Startdate ""}}{{.Startdate}}{{end}}
-		{{if ne .CFPdate ""}}{{.CFPdate}}{{end}}
-	</dd>
-	{{end}}
-</dl>
-
-<footer>&#169; 2016
-	<a href="https://twitter.com/estet">@estet</a>
-</footer>
-
+	<footer>&#169; 2016
+		<a href="https://twitter.com/estet">@estet</a>
+	</footer>
 </body>
 </html>
