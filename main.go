@@ -17,6 +17,9 @@ const (
 	timeFormat = "02.01.2006"
 	html       = "template.html"
 	data       = "conf.yml"
+	author     = "Sergey Bronnikov"
+	email      = "sergeyb@openvz.org"
+	url        = "https://bronevichok.ru/ose"
 	daysBefore = 10
 )
 
@@ -42,19 +45,18 @@ func mkHTML(cnf *[]Conf) {
 func mkRSS(cnf *[]Conf) {
 
 	now := time.Now()
-
 	feed := &feeds.Feed{
 		Title:       "opensource events",
-		Link:        &feeds.Link{Href: "https://bronevichok.ru/oss"},
+		Link:        &feeds.Link{Href: url},
 		Description: "opensource, peace, software",
-		Author:      &feeds.Author{Name: "Sergey Bronnikov", Email: "sergeyb@openvz.org"},
+		Author:      &feeds.Author{Name: author, Email: email},
 		Created:     now,
 	}
 
-	conf := feeds.Item{}
 	for _, c := range *cnf {
+		conf := feeds.Item{}
 		Link := &feeds.Link{Href: c.URL}
-		Author := &feeds.Author{Name: "Sergey Bronnikov", Email: "sergeyb@openvz.org"}
+		Author := &feeds.Author{Name: author, Email: email}
 		conf.Title = c.Title
 		conf.Link = Link
 		conf.Description = ""
@@ -76,15 +78,16 @@ func main() {
 	flag.Usage = func() {
 		fmt.Println("Usage:\n")
 		flag.PrintDefaults()
+		fmt.Println()
 	}
 
-	format := flag.String("out", "", "Output format (rss, html, icalendar)")
+	format := flag.String("out", "", "Output format (rss, html)")
 	flag.Parse()
 
 	if *format == "" {
 		fmt.Println("No parameters specified.")
 		flag.Usage()
-		os.Exit(1)
+		//os.Exit(1)
 	}
 
 	if _, err := os.Stat(data); os.IsNotExist(err) {
@@ -110,11 +113,28 @@ func main() {
 
 	now := time.Now()
 	for _, c := range confs {
-		if c.Startdate == now.AddDate(0, 0, daysBefore).Format(timeFormat) {
-			closestConfs = append(closestConfs, c)
+		if c.Startdate != "" {
+			conftime, _ := time.Parse(timeFormat, c.Startdate)
+			conf := int64(conftime.Sub(now).Hours()) / 24
+
+			if (conf <= daysBefore) && (conf > 0) {
+				closestConfs = append(closestConfs, c)
+			}
+			if now.Year() > conftime.Year() && *format == "" {
+				fmt.Printf("Conference was last time in previous year: %s - %s\n", c.Title, c.URL)
+			}
+		} else {
+			if *format == "" {
+				fmt.Printf("Start date is empty: %s - %s\n", c.Title, c.URL)
+			}
 		}
-		if c.CFPDate == now.AddDate(0, 0, daysBefore).Format(timeFormat) {
-			closestCFPs = append(closestCFPs, c)
+		if c.CFPDate != "" {
+			cfptime, _ := time.Parse(timeFormat, c.CFPDate)
+			cfp := int64(cfptime.Sub(now).Hours() / 24)
+
+			if (cfp <= daysBefore) && (cfp > 0) {
+				closestCFPs = append(closestCFPs, c)
+			}
 		}
 	}
 
