@@ -75,7 +75,7 @@ func main() {
 
 	flag.Usage = func() {
 		fmt.Println("Usage:\n")
-		//flag.PrintDefaults()
+		flag.PrintDefaults()
 	}
 
 	format := flag.String("out", "", "Output format (rss, html, icalendar)")

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<!-- made with love by OpenVZ developers -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Sergey Bronnikov">
+  <meta name="keywords" content="open source, conference">
+  <meta name="description" content="List of the closest opensource conferences">
+  <meta name="application-name" content="">
+  <link rel="stylesheet" href="main.css">
+  <title>Open Source Conferences</title>
+</head>
+
+<body>
+	<header><h1>Open Source Conferences</h1></header>
+
+<h2>List of the closest conferences</h2>
+
+<dl>
+	{{range .}}
+	<dt id="{{.Title}}">
+		<a href="{{.URL}}">{{.Title}}</a>
+	</dt>
+
+	<dd>
+		{{if ne .Location ""}}{{.Location}}{{end}}
+		{{if ne .Startdate ""}}{{.Startdate}}{{end}}
+		{{if ne .CFPdate ""}}{{.CFPdate}}{{end}}
+	</dd>
+	{{end}}
+</dl>
+
+<footer>&#169; 2016
+	<a href="https://twitter.com/estet">@estet</a>
+</footer>
+
+</body>
+</html>
