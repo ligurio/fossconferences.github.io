@@ -1,0 +1,22 @@
+type: seq
+sequence:
+  - type: map
+    mapping:
+      title:
+        type: str
+        required: True
+      url:
+        type: str
+        required: True
+      startdate:
+        type: str
+        required: False
+      cfpdate:
+        type: str
+        required: False
+      cfpurl:
+        type: str
+        required: False
+      location:
+        type: str
+        required: False
