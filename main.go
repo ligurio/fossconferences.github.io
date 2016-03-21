@@ -113,7 +113,7 @@ func main() {
 
 	now := time.Now()
 	for _, c := range confs {
-		if c.Startdate != "" {
+		if c.Startdate != "none" {
 			conftime, _ := time.Parse(timeFormat, c.Startdate)
 			conf := int64(conftime.Sub(now).Hours()) / 24
 
@@ -121,20 +121,24 @@ func main() {
 				closestConfs = append(closestConfs, c)
 			}
 			if now.Year() > conftime.Year() && *format == "" {
-				fmt.Printf("Conference was last time in previous year: %s - %s\n", c.Title, c.URL)
-			}
-		} else {
-			if *format == "" {
-				fmt.Printf("Start date is empty: %s - %s\n", c.Title, c.URL)
+				fmt.Printf("WARNING: This conference was last time in previous year: %s - %s\n", c.Title, c.URL)
 			}
 		}
-		if c.CFPDate != "" {
+		/*
+			if c.CFPDate == "none" && c.Startdate == "none" {
+				fmt.Printf("WARNING: CFP and start dates are empty: %s - %s\n", c.Title, c.URL)
+			}
+		*/
+
+		if c.CFPDate != "none" {
 			cfptime, _ := time.Parse(timeFormat, c.CFPDate)
 			cfp := int64(cfptime.Sub(now).Hours() / 24)
 
 			if (cfp <= daysBefore) && (cfp > 0) {
 				closestCFPs = append(closestCFPs, c)
 			}
+		} else {
+			fmt.Printf("WARNING: CFP date is empty: %s - %s\n", c.Title, c.URL)
 		}
 	}
 
@@ -142,7 +146,5 @@ func main() {
 		mkRSS(&closestConfs)
 	} else if *format == "html" {
 		mkHTML(&closestConfs)
-	} else if *format == "icalendar" {
-		fmt.Printf("Not implemented.")
 	}
 }
