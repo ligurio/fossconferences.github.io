@@ -1,6 +1,6 @@
 # FOSS events tracking
 
-## OS release dates sources
+## Sources about OS release dates
 
 * CentOS: [Releases](https://wiki.centos.org/About/Product)
 * Debian: [Releases](https://wiki.debian.org/DebianReleases)
@@ -12,10 +12,12 @@
 * Ubuntu: [Releases](https://wiki.ubuntu.com/Releases), [Development Codenames](https://wiki.ubuntu.com/DevelopmentCodeNames)
 
 
-## CFP sources
+## Sources about opensource events
 
 * https://en.wikipedia.org/wiki/List_of_free-software_events
 * http://events.linuxfoundation.org/
 * https://lwn.net/Calendar/
 * http://www.wikicfp.com/cfp/home
 * https://opensource.com/resources/conferences-and-events-monthly
+* https://twitter.com/estet/lists/foss-conferences
+* https://github.com/bamos/conference-tracker

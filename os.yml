@@ -1,10 +1,9 @@
-title: Free and opensource software
 releases:
   - os: Fedora
     url: https://getfedora.org/
     releases:
         - milestone: Fedora 23 RTM
-        date: 2015-10-27
+          date: 2015-10-27
   - os: Red Hat Enterprise Linux
     url: https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux
     releases:
