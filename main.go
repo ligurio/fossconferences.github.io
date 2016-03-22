@@ -32,6 +32,12 @@ type Conf struct {
 	Location  string
 }
 
+func mkCSV(cnf *[]Conf) {
+	fmt.Printf("Title;URL;Begin date;CFP;CFP URL;Location\n")
+	for _, c := range *cnf {
+		fmt.Printf("%s;%s;%s;%s;%s;%s\n", c.Title, c.URL, c.Startdate, c.CFPDate, c.CFPURL, c.Location)
+	}
+}
 func mkHTML(cnf *[]Conf) {
 	htmltmpl, err := ioutil.ReadFile(html)
 	if err != nil {
@@ -150,5 +156,7 @@ func main() {
 		mkFeed(&closestConfs, *format)
 	} else if *format == "html" {
 		mkHTML(&closestConfs)
+	} else if *format == "csv" {
+		mkCSV(&confs)
 	}
 }
