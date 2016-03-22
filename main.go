@@ -77,6 +77,20 @@ func mkFeed(cnf *[]Conf, f string) {
 
 }
 
+func wasThisYear(date string) bool {
+	now := time.Now()
+	if date != "none" {
+		ctime, _ := time.Parse(timeFormat, date)
+		if (ctime.Year() == now.Year()) && int64(ctime.Sub(now)) < 0 {
+			return true
+		} else {
+			return false
+		}
+	} else {
+		return false
+	}
+}
+
 func main() {
 
 	flag.Usage = func() {
@@ -115,36 +129,18 @@ func main() {
 
 	now := time.Now()
 	for _, c := range confs {
-		// notify if 5 or 10 days before ending of CFP
-		// warn if not: (startdate was this year) or (CFPdate or startdate will be in future)
 		message := ""
-		if c.Startdate != "none" {
-			conftime, _ := time.Parse(timeFormat, c.Startdate)
-			conf := int64(conftime.Sub(now).Hours()) / 24
-
-			if now.Year() > conftime.Year() && *format == "" {
-				fmt.Printf("WARNING: This conference was last time in previous year: %s - %s\n", c.Title, c.URL)
-			}
-			if (conf <= daysBefore) && (conf > 0) {
-				message = "Conference will start soon: "
-				closestConfs = append(closestConfs, c)
-			}
-		}
-
 		if c.CFPDate != "none" {
 			cfptime, _ := time.Parse(timeFormat, c.CFPDate)
 			cfp := int64(cfptime.Sub(now).Hours() / 24)
 
-			if (cfp <= daysBefore) && (cfp > 0) {
-				message = "Conference will start soon: "
+			if cfp == 5 || cfp == 10 {
+				message = "CFP will finish soon: "
 				closestConfs = append(closestConfs, c)
 			}
-			if now.Year() > cfptime.Year() && *format == "" {
-				fmt.Printf("WARNING: CFP of this conference was last time in previous year: %s - %s\n", c.Title, c.URL)
-			}
 		} else {
-			if *format == "" {
-				fmt.Printf("WARNING: CFP date is empty: %s - %s\n", c.Title, c.URL)
+			if *format == "" && !wasThisYear(c.Startdate) {
+				fmt.Printf("[WARN] CFP date is empty: %s - %s\n", c.Title, c.URL)
 			}
 		}
 		c.Title = message + c.Title

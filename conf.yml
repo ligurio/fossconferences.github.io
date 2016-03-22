@@ -8,14 +8,14 @@
 - title: CodeFest
   url: http://codefest.ru/
   startdate: 26.03.2016
-  cfpdate: none
+  cfpdate: 15.02.2016
   cfpurl: none
   location: Russia, Novosibirsk
 
 - title: Collaboration Summit
   url: http://events.linuxfoundation.org/events/collaboration-summit
   startdate: 29.03.2016
-  cfpdate: none
+  cfpdate: 01.02.2016
   location: Lake Tahoe, CA, USA
 
 - title: ContainerDays Austin
@@ -31,7 +31,7 @@
   location: Boston, MA, USA
 
 - title: ContainerDays NYC
-  url: http://dynamicinfradays.org/events/2015-nyc/
+  url: http://dynamicinfradays.org/
   startdate: none
   cfpdate: none
   location: New York, NY, USA
@@ -235,7 +235,7 @@
 - title: OpenSym
   url: http://www.opensym.org/
   startdate: 17.08.2016
-  cfpdate: none
+  cfpdate: 25.03.2016
   location: Berlin, Germany
 
 - title: OSCON Austin
@@ -352,8 +352,8 @@
 - title: vBSDcon
   url: https://www.verisign.com/en_US/internet-technology-news/verisign-events/vbsdcon/index.xhtml
   startdate: 11.09.2015
-  cfpdate:
-  location:
+  cfpdate: none
+  location: none
 
 - title: NYCBSDCon
   url: http://www.nycbsdcon.org/
@@ -364,7 +364,7 @@
 
 - title: MeetBSD
   url: http://meetbsd.org/
-  startdate:
-  cfpdate:
-  cfpurl:
+  startdate: none
+  cfpdate: none
+  cfpurl: none
   location: Cracow, Warsaw
