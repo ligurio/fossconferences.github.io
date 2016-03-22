@@ -25,4 +25,6 @@
 
 ## Build
 
-   export GO386=387; GOARCH=386; export GOOS=openbsd; go build -o oss
+``
+export GO386=387; export GOARCH=386; export GOOS=openbsd; go build -o oss
+``
