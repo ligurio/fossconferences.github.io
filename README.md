@@ -21,3 +21,8 @@
 * https://opensource.com/resources/conferences-and-events-monthly
 * https://twitter.com/estet/lists/foss-conferences
 * https://github.com/bamos/conference-tracker
+* http://www.bsdevents.org/
+
+## Build
+
+   export GO386=387; GOARCH=386; export GOOS=openbsd; go build -o oss

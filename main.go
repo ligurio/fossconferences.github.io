@@ -42,7 +42,7 @@ func mkHTML(cnf *[]Conf) {
 	t.Execute(os.Stdout, *cnf)
 }
 
-func mkRSS(cnf *[]Conf) {
+func mkFeed(cnf *[]Conf, f string) {
 
 	now := time.Now()
 	feed := &feeds.Feed{
@@ -55,22 +55,26 @@ func mkRSS(cnf *[]Conf) {
 
 	for _, c := range *cnf {
 		conf := feeds.Item{}
-		Link := &feeds.Link{Href: c.URL}
-		Author := &feeds.Author{Name: author, Email: email}
 		conf.Title = c.Title
-		conf.Link = Link
-		conf.Description = ""
-		conf.Author = Author
+		if c.URL != "none" {
+			conf.Link = &feeds.Link{Href: c.URL}
+		}
+		if c.CFPURL != "none" {
+			conf.Description = c.CFPURL
+		}
+		conf.Author = &feeds.Author{Name: author, Email: email}
 		conf.Created = now
 		feed.Add(&conf)
 	}
 
-	rss, err := feed.ToRss()
-	if err != nil {
-		log.Fatal(err)
+	if f == "rss" {
+		lenta, _ := feed.ToRss()
+		fmt.Println(lenta)
+	} else {
+		lenta, _ := feed.ToAtom()
+		fmt.Println(lenta)
 	}
 
-	fmt.Println(rss)
 }
 
 func main() {
@@ -81,13 +85,12 @@ func main() {
 		fmt.Println()
 	}
 
-	format := flag.String("out", "", "Output format (rss, html)")
+	format := flag.String("out", "", "Output format (rss, atom, html)")
 	flag.Parse()
 
 	if *format == "" {
 		fmt.Println("No parameters specified.")
 		flag.Usage()
-		//os.Exit(1)
 	}
 
 	if _, err := os.Stat(data); os.IsNotExist(err) {
@@ -103,8 +106,7 @@ func main() {
 	}
 
 	confs := []Conf{}
-	closestConfs := []Conf{} // conferences started after beforeDays
-	closestCFPs := []Conf{}  // conferences which will finish CFP after beforeDays
+	closestConfs := []Conf{}
 
 	err = yaml.Unmarshal(yamlFile, &confs)
 	if err != nil {
@@ -118,32 +120,31 @@ func main() {
 			conf := int64(conftime.Sub(now).Hours()) / 24
 
 			if (conf <= daysBefore) && (conf > 0) {
+				c.Title = "Conference will start soon: " + c.Title
 				closestConfs = append(closestConfs, c)
 			}
 			if now.Year() > conftime.Year() && *format == "" {
 				fmt.Printf("WARNING: This conference was last time in previous year: %s - %s\n", c.Title, c.URL)
 			}
 		}
-		/*
-			if c.CFPDate == "none" && c.Startdate == "none" {
-				fmt.Printf("WARNING: CFP and start dates are empty: %s - %s\n", c.Title, c.URL)
-			}
-		*/
 
 		if c.CFPDate != "none" {
 			cfptime, _ := time.Parse(timeFormat, c.CFPDate)
 			cfp := int64(cfptime.Sub(now).Hours() / 24)
 
 			if (cfp <= daysBefore) && (cfp > 0) {
-				closestCFPs = append(closestCFPs, c)
+				c.Title = "CFP will close soon: " + c.Title
+				closestConfs = append(closestConfs, c)
 			}
 		} else {
-			fmt.Printf("WARNING: CFP date is empty: %s - %s\n", c.Title, c.URL)
+			if *format == "" {
+				fmt.Printf("WARNING: CFP date is empty: %s - %s\n", c.Title, c.URL)
+			}
 		}
 	}
 
-	if *format == "rss" {
-		mkRSS(&closestConfs)
+	if *format == "rss" || *format == "atom" {
+		mkFeed(&closestConfs, *format)
 	} else if *format == "html" {
 		mkHTML(&closestConfs)
 	}
