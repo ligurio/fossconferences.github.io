@@ -115,16 +115,19 @@ func main() {
 
 	now := time.Now()
 	for _, c := range confs {
+		// notify if 5 or 10 days before ending of CFP
+		// warn if not: (startdate was this year) or (CFPdate or startdate will be in future)
+		message := ""
 		if c.Startdate != "none" {
 			conftime, _ := time.Parse(timeFormat, c.Startdate)
 			conf := int64(conftime.Sub(now).Hours()) / 24
 
-			if (conf <= daysBefore) && (conf > 0) {
-				c.Title = "Conference will start soon: " + c.Title
-				closestConfs = append(closestConfs, c)
-			}
 			if now.Year() > conftime.Year() && *format == "" {
 				fmt.Printf("WARNING: This conference was last time in previous year: %s - %s\n", c.Title, c.URL)
+			}
+			if (conf <= daysBefore) && (conf > 0) {
+				message = "Conference will start soon: "
+				closestConfs = append(closestConfs, c)
 			}
 		}
 
@@ -133,14 +136,18 @@ func main() {
 			cfp := int64(cfptime.Sub(now).Hours() / 24)
 
 			if (cfp <= daysBefore) && (cfp > 0) {
-				c.Title = "CFP will close soon: " + c.Title
+				message = "Conference will start soon: "
 				closestConfs = append(closestConfs, c)
+			}
+			if now.Year() > cfptime.Year() && *format == "" {
+				fmt.Printf("WARNING: CFP of this conference was last time in previous year: %s - %s\n", c.Title, c.URL)
 			}
 		} else {
 			if *format == "" {
 				fmt.Printf("WARNING: CFP date is empty: %s - %s\n", c.Title, c.URL)
 			}
 		}
+		c.Title = message + c.Title
 	}
 
 	if *format == "rss" || *format == "atom" {
