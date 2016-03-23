@@ -1,5 +1,7 @@
 # FOSS events tracking
 
+[![Build Status](https://travis-ci.org/ligurio/oss-events.svg?branch=master)](https://travis-ci.org/ligurio/oss-events)
+
 ## Sources about OS release dates
 
 * CentOS: [Releases](https://wiki.centos.org/About/Product)
