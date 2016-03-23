@@ -36,8 +36,9 @@
 
 		<dd>
 			{{if ne .Location ""}}{{.Location}}{{end}}
-			{{if ne .Startdate ""}}{{.Startdate}}{{end}}
-			{{if ne .CFPDate ""}}{{.CFPDate}}{{end}}
+			{{if ne .Startdate ""}}<b>Begin date:</b> {{.Startdate}} {{end}}
+			{{if ne .CFPDate ""}}<b>CFP deadline:</b> {{.CFPDate}} {{end}}
+			{{if ne .CFPURL ""}}<a href="{{.CFPURL}}">Submit a proposal</a>{{end}}
 			<span class="addtocalendar atc-style-blue">
 				<var class="atc_event">
 					<var class="atc_date_start">{{.Startdate}}</var>
