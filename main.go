@@ -135,13 +135,15 @@ func main() {
 
 	now := time.Now()
 	for _, c := range confs {
-		message := ""
 		if c.CFPDate != "none" {
-			cfptime, _ := time.Parse(timeFormat, c.CFPDate)
+			cfptime, err := time.Parse(timeFormat, c.CFPDate)
+			if err != nil && *format == "" {
+				fmt.Printf("[WARN] Wrong date specified (%s): %s - %s\n", c.CFPDate, c.Title, c.URL)
+			}
 			cfp := int64(cfptime.Sub(now).Hours() / 24)
 
 			if cfp == 5 || cfp == 10 {
-				message = "CFP will finish soon: "
+				c.Title = "CFP will finish soon: " + c.Title
 				closestConfs = append(closestConfs, c)
 			}
 		} else {
@@ -149,7 +151,6 @@ func main() {
 				fmt.Printf("[WARN] CFP date is empty: %s - %s\n", c.Title, c.URL)
 			}
 		}
-		c.Title = message + c.Title
 	}
 
 	if *format == "rss" || *format == "atom" {

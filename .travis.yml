@@ -13,4 +13,4 @@ script:
   - pykwalify --data-file conf.yml --schema-file schema.yaml
 
 notifications:
-  email: false
+  email: sergeyb@openvz.org

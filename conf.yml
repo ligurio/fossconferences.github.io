@@ -126,7 +126,8 @@
 - title: Highload
   url: http://www.highload.ru/
   startdate: 02.11.2016
-  cfpdate: none
+  cfpdate: 05.09.2016
+  cfpurl: http://www.highload.ru/2015/speakers/359.html
   location: Moscow, Russia
 
 - title: International Conference on Open Source Systems
@@ -198,13 +199,13 @@
 - title: Linux Storage, Filesystem and Memory Management Summit
   url: http://events.linuxfoundation.org/events/linux-storage-filesystem-and-mm-summit
   startdate: 18.04.2016
-  cfpdate: none
+  cfpdate: 01.03.2016
   location: Raleigh, NC, USA
 
 - title: Linux Kernel Summit
   url: http://events.linuxfoundation.org/events/linux-kernel-summit
   startdate: 31.10.2016
-  cfpdate: none
+  cfpdate: 01.03.2016
   location: Santa Fe, NM, USA
 
 - title: LVEE
@@ -284,18 +285,22 @@
 - title: RootConf
   url: http://rootconf.ru/
   startdate: 19.05.2016
-  cfpdate: none
+  cfpdate: 03.04.2016
+  cfpurl: http://rootconf.ru/2016/speakers
   location: Moscow, Russia
 
 - title: SECR
   url: http://secr.ru/
-  startdate: 27.10.2016
-  cfpdate: none
+  startdate: 28.10.2016
+  cfpdate: 01.07.2016
+  cfpurl: http://secr.ru/for-speakers/proposal
   location: Russia, Moscow
+
 - title: Secon
   url: http://secon.ru/
   startdate: 22.04.2016
-  cfpdate: none
+  cfpdate: 04.04.2016
+  cfpurl: http://2016.secon.ru/forspeakers
   location: Russia, Penza
 
 - title: SCALE14x
@@ -325,7 +330,8 @@
 - title: WhaleRider
   url: http://whalerider.ru/
   startdate: 19.05.2016
-  cfpdate: none
+  cfpdate: 03.04.2016
+  cfpurl: http://whalerider.ru/2016/speakers
   location: Moscow, Russia
 
 - title: AsiaBSDCon
