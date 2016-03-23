@@ -1,5 +1,11 @@
 # FOSS events tracking
 
+**[Subscribe to RSS feed](https://bronevichok.ru/ose/conf-rss.xml)**
+
+Crafted by [Sergey Bronnikov](https://bronevichok.ru/).
+
+---
+
 [![Build Status](https://travis-ci.org/ligurio/oss-events.svg?branch=master)](https://travis-ci.org/ligurio/oss-events)
 
 ## Sources about OS release dates
@@ -16,14 +22,18 @@
 
 ## Sources about opensource conferences
 
-* https://en.wikipedia.org/wiki/List_of_free-software_events
-* http://events.linuxfoundation.org/
-* https://lwn.net/Calendar/
-* http://www.wikicfp.com/cfp/home
-* https://opensource.com/resources/conferences-and-events-monthly
-* https://twitter.com/estet/lists/foss-conferences
+* [Linux Foundation](http://events.linuxfoundation.org/)
+* [LWN](https://lwn.net/Calendar/)
+* [OpenSource.com](https://opensource.com/resources/conferences-and-events-monthly)
+* Twitter lists: [@estet](https://twitter.com/estet/lists/foss-conferences), [@jakerella](https://twitter.com/jakerella/lists/conferences/members)
+* [Call to speakers](https://calltospeakers.com/)
+* [Lanyrd](http://lanyrd.com/calls/)
 * https://github.com/bamos/conference-tracker
-* http://www.bsdevents.org/
+* [BSD events](http://www.bsdevents.org/)
+* [Wikipedia](https://en.wikipedia.org/wiki/List_of_computer_science_conferences)
+* [RichardLitt/awesome-conferences](https://github.com/RichardLitt/awesome-conferences)
+* [PlanetRuby/awesome-events](https://github.com/planetruby/awesome-events)
+* [WikiCFP: CS](http://www.wikicfp.com/cfp/call?conference=computer%20science)
 
 ## Build
 
