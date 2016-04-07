@@ -4,16 +4,20 @@ releases:
     releases:
         - milestone: Fedora 23 RTM
           date: 2015-10-27
+
   - os: Red Hat Enterprise Linux
     url: https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux
     releases:
         - milestone:
           date:
+
   - os: Ubuntu Linux
     url: http://www.ubuntu.com/
+    # https://wiki.ubuntu.com/ReleaseSchedule
     releases:
         - milestone:
           date:
+
   - os: SuSe Linux
     url: https://www.suse.com/products/server/
     releases:

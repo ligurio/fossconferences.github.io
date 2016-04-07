@@ -20,7 +20,6 @@ const (
 	author     = "Sergey Bronnikov"
 	email      = "sergeyb@openvz.org"
 	url        = "https://bronevichok.ru/ose"
-	daysBefore = 10
 )
 
 type Conf struct {
@@ -105,7 +104,7 @@ func main() {
 		fmt.Println()
 	}
 
-	format := flag.String("out", "", "Output format (rss, atom, html)")
+	format := flag.String("out", "", "Output format (rss, atom, html, csv)")
 	flag.Parse()
 
 	if *format == "" {

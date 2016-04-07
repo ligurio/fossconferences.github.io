@@ -22,7 +22,7 @@
   url: http://www.cubaconf.org/
   startdate: 25.04.2016
   cfpdate: none
-  cfpurl: none
+  cfpurl: https://contributions.cubaconf.org/
   location: Havana, Cuba
 
 - title: ContainerCon Japan
@@ -39,6 +39,12 @@
   cfpurl: http://events.linuxfoundation.org/events/containercon-europe/program/cfp
   location: Berlin, Germany
 
+- title: ContainerSched
+  url: https://skillsmatter.com/conferences/7208-containersched-2015
+  startdate: 19.10.2016
+  cfpdate: none
+  location: London, UK
+
 - title: ContainerDays Austin
   url: http://www.containerdaysaustin.com/2016/
   startdate: none
@@ -48,7 +54,7 @@
 - title: ContainerDays Boston
   url: http://dynamicinfradays.org/events/2016-boston/
   startdate: 24.05.2016
-  cfpdate: none
+  cfpdate: 24.03.2016
   location: Boston, MA, USA
 
 - title: ContainerDays NYC
@@ -178,6 +184,13 @@
   cfpdate: 04.01.2016
   cfpurl: http://tutopen.cs.tut.fi/oss2016/uploads/calls/CFP_OSS16.pdf
   location: Germany, Gothenburg
+
+- title: Kernel recipes
+  url: https://kernel-recipes.org/
+  startdate: 28.09.2016
+  cfpdate: none
+  cfpurl: none
+  location: Paris, France
 
 - title: KubeCon
   url: https://kubecon.io/
@@ -448,10 +461,10 @@
 
 - title: EuroBSDcon
   url: https://eurobsdcon.org/
-  startdate: 01.10.2015
-  cfpdate: 22.05.2016
-  cfpurl: https://2015.eurobsdcon.org/call-for-papers/
-  location: Stockholm, Sweden
+  startdate: 22.09.2016
+  cfpdate: 08.05.2016
+  cfpurl: https://2016.eurobsdcon.org/call-for-papers/
+  location: Belgrade, Serbia
 
 - title: BSDCan
   url: https://www.bsdcan.org/
