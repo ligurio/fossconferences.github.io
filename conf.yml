@@ -296,6 +296,13 @@
   cfpdate: none
   location: Belarus, Grodno
 
+- title: nginx.conf
+  url: https://www.nginx.com/nginxconf/
+  startdate: 0.09.2016
+  cfpdate: 05.05.2016
+  cfpurl: https://nginxconf16.busyconf.com/proposals/new/
+  location: Austin, TX
+
 - title: OSS Weekend Bratislava
   url: http://ossvikend.sk/
   startdate: 09.04.2016
