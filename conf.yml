@@ -185,6 +185,13 @@
   cfpurl: http://tutopen.cs.tut.fi/oss2016/uploads/calls/CFP_OSS16.pdf
   location: Germany, Gothenburg
 
+- title: ISDEF
+  url: http://www.isdef.org/ru/conference/
+  startdate: 21.04.2016
+  cfpdate: 21.04.2016
+  cfpurl: http://www.isdef.org/ru/conference/isdef2016_spring/doc_submit.php
+  location: Kazan, Russia
+
 - title: Kernel recipes
   url: https://kernel-recipes.org/
   startdate: 28.09.2016
