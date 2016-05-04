@@ -42,7 +42,7 @@
 - title: ContainerSched
   url: https://skillsmatter.com/conferences/7208-containersched-2015
   startdate: 19.10.2016
-  cfpdate: none
+  cfpdate: 19.10.2016
   location: London, UK
 
 - title: ContainerDays Austin
@@ -63,10 +63,16 @@
   cfpdate: none
   location: New York, NY, USA
 
+- title: ContainerDays Hamburg
+  url: http://dynamicinfradays.org/
+  startdate: 27.06.2016
+  cfpdate: none
+  location: Hamburg, Germany
+
 - title: Container Camp SF
   url: https://container.camp/
   startdate: 15.04.2016
-  cfpdate: none
+  cfpdate: 15.04.2016
   location: San Francisco, USA
 
 - title: Container Camp London
@@ -84,7 +90,7 @@
 - title: DevNation
   url: http://www.devnation.org/
   startdate: 26.06.2016
-  cfpdate: none
+  cfpdate: 26.06.2016
   location: SF, CA, USA
 
 - title: DevConf.cz
@@ -109,7 +115,7 @@
 - title: FOSS4G North America
   url: https://2016.foss4g-na.org/
   startdate: 02.05.2016
-  cfpdate: none
+  cfpdate: 02.05.2016
   cfpurl: none
   location: Raleigh, NC, USA
 
@@ -135,7 +141,7 @@
 - title: FLOSS Community Metrics Meeting
   url: http://flosscommunitymetrics.org/
   startdate: 15.05.2016
-  cfpdate: none
+  cfpdate: 15.05.2016
   location: Austin, TX, USA
 
 - title: FOSSCON
@@ -195,7 +201,7 @@
 - title: Kernel recipes
   url: https://kernel-recipes.org/
   startdate: 28.09.2016
-  cfpdate: none
+  cfpdate: 28.09.2016
   cfpurl: none
   location: Paris, France
 
@@ -320,7 +326,7 @@
 - title: OSCAL (Open Source Conference Albania)
   url: http://oscal.openlabs.cc/
   startdate: 15.05.2016
-  cfpdate: none
+  cfpdate: 15.05.2016
   cfpurl: none
   location: Tirana, Albania
 
@@ -333,15 +339,15 @@
 
 - title: Open Source Day
   url: http://opensourceday.com/
-  startdate: none
-  cfpdate: none
+  startdate: 26.04.2016
+  cfpdate: 26.04.2016
   cfpurl: none
   location: Warsaw, Poland
 
 - title: OpenWest
   url: http://www.openwest.org/
   startdate: 13.07.2016
-  cfpdate: none
+  cfpdate: 13.07.2016
   location: Sandy, UT, USA
 
 - title: OpenSym
@@ -352,7 +358,7 @@
 
 - title: OSCON Austin
   url: http://www.oscon.com/
-  startdate: 18.05.2016
+  startdate: 16.05.2016
   cfpdate: 21.03.2016
   cfpurl: http://conferences.oreilly.com/oscon/open-source-us/public/cfp/454
   location: Austin, TX, USA
@@ -367,7 +373,8 @@
 - title: OSCON London
   url: http://www.oscon.com/
   startdate: 17.10.2016
-  cfpdate: none
+  cfpdate: 23.05.2016
+  cfpurl: http://conferences.oreilly.com/oscon/open-source-eu/public/cfp/466
   location: UK, London
 
 - title: OSday
@@ -385,7 +392,7 @@
 - title: Paris OpenSource Summit
   url: http://opensourcesummit.paris/
   startdate: 18.11.2016
-  cfpdate: none
+  cfpdate: 18.11.2016
   location: Paris, France
 
 - title: POSSCON
@@ -397,7 +404,7 @@
 - title: RedHat Summit
   url: https://www.redhat.com/en/summit
   startdate: 27.06.2016
-  cfpdate: none
+  cfpdate: 27.06.2016
   location: SF, CA, USA
 
 - title: RootConf
@@ -435,14 +442,14 @@
 
 - title: Software Circus
   url: http://www.softwarecircus.io/
-  startdate: none
-  cfpdate: none
-  location: none
+  startdate: 01.09.2016
+  cfpdate: 01.09.2016
+  location: Amsterdam
 
 - title: T-Dose
   url: http://t-dose.org/2015/speakers
   startdate: 12.11.2016
-  cfpdate: none
+  cfpdate: 12.11.2016
   location: Eindhoven, Netherlands
 
 - title: Texas Linux Fest
@@ -490,7 +497,7 @@
 - title: vBSDcon
   url: https://www.verisign.com/en_US/internet-technology-news/verisign-events/vbsdcon/index.xhtml
   startdate: 11.09.2015
-  cfpdate: none
+  cfpdate: 11.09.2015
   location: none
 
 - title: NYCBSDCon
