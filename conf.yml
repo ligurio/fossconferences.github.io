@@ -91,6 +91,7 @@
   url: http://www.devnation.org/
   startdate: 26.06.2016
   cfpdate: 26.06.2016
+  cfpurl: https://rh2016.smarteventscloud.com/portal/cfp/cfpLogin.ww
   location: SF, CA, USA
 
 - title: DevConf.cz
@@ -327,7 +328,7 @@
   url: http://oscal.openlabs.cc/
   startdate: 15.05.2016
   cfpdate: 15.05.2016
-  cfpurl: none
+  cfpurl: http://oscal.openlabs.cc/oscal-2016-call-for-proposals/
   location: Tirana, Albania
 
 - title: OpenSource Bridge
@@ -348,6 +349,7 @@
   url: http://www.openwest.org/
   startdate: 13.07.2016
   cfpdate: 13.07.2016
+  cfpurl: https://cfp.openwest.org/
   location: Sandy, UT, USA
 
 - title: OpenSym
@@ -411,6 +413,7 @@
   url: https://www.redhat.com/en/summit
   startdate: 27.06.2016
   cfpdate: 27.06.2016
+  cfpurl: https://rh2016.smarteventscloud.com/portal/cfp/cfpLogin.ww
   location: SF, CA, USA
 
 - title: RootConf
