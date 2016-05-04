@@ -37,7 +37,7 @@
 {{range .}}
   <li class="table-list-row">
     <div class="table-list-cell call-days">
-        {{if ne .CFPURL ""}}<a class="call-link" href="{{.CFPURL}}">{{.DaysLeft}}<br>day</a>{{else}}{{.DaysLeft}}<br>day{{end}}
+        {{if and (ne .CFPURL "none") (ne .CFPURL "")}}<a class="call-link" href="{{.CFPURL}}">{{.DaysLeft}}<br>day</a>{{end}}
     </div>
     <div class="table-list-cell">
       <a class="call-link" href="{{.URL}}">{{.Title}}</a>
