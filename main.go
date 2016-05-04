@@ -109,7 +109,7 @@ func (slice confs) Len() int {
 }
 
 func (slice confs) Less(i, j int) bool {
-	return slice[i].DaysLeft < slice[j].DaysLeft
+	return (slice[i].DaysLeft < slice[j].DaysLeft)
 }
 
 func (slice confs) Swap(i, j int) {
@@ -161,7 +161,12 @@ func main() {
 			}
 
 			c.DaysLeft = int64(cfptime.Sub(now).Hours() / 24)
-			confs[i].DaysLeft = c.DaysLeft
+
+			if c.DaysLeft < 0 {
+				confs[i].DaysLeft = 1000
+			} else {
+				confs[i].DaysLeft = c.DaysLeft
+			}
 
 			if c.DaysLeft == 5 || c.DaysLeft == 10 {
 				closest = append(closest, c)
@@ -170,6 +175,7 @@ func main() {
 			if *format == "" && !wasThisYear(c.Startdate) {
 				fmt.Printf("[WARN] CFP date is empty: %s - %s\n", c.Title, c.URL)
 			}
+			confs[i].DaysLeft = 1000
 		}
 	}
 
