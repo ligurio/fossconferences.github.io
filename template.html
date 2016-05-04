@@ -1,63 +1,67 @@
-<!doctype html>
-<html lang="en">
-
 <!-- Made with love by OpenVZ developers -->
 
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="Sergey Bronnikov">
-  <meta name="keywords" content="open source, conference">
-  <meta name="description" content="List of the closest opensource conferences">
-  <meta name="application-name" content="">
-  <link rel="stylesheet" href="main.css">
-  <title>Open Source Conferences</title>
-  <link href="https://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Find your voice - Call to Speakers</title>
+    <meta name="author" content="Sergey Bronnikov">
+    <meta name="generator" content="some kludgy golang code">
+    <meta name="keywords" content="open source, conference">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tracking of opensource events: Call for speakers and opensource release dates.">
+    <link rel="alternate" type="application/rss+xml" title="Call for speakers RSS Feed" href="/conf-rss.xml">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://calltospeakers.com/static/css/prefix-style.css">
+  </head>
+  <body>
+    <div id="wrapper">
+        <header id="nav">
+          <a class="site-title" href="/">
+            <span>Tracking of opensource events</span>
+          </a>
+        </header>
+        
+      <div id="content">
+        
+<ul id="conferences" class="table-list">
+  <li class="table-list-header">
+    <div class="table-list-cell call-days">Closes</div>
+    <div class="table-list-cell">Conference</div>
+    <div class="table-list-cell call-date">Event Date</div>
+    <div class="table-list-cell call-country">Location</div>
+  </li>
+  
+    
+{{range .}}
+  <li class="table-list-row">
+    <div class="table-list-cell call-days">
+        {{if ne .CFPURL ""}}<a class="call-link" href="{{.CFPURL}}">{{.DaysLeft}}<br>day</a>{{else}}{{.DaysLeft}}<br>day{{end}}
+    </div>
+    <div class="table-list-cell">
+      <a class="call-link" href="{{.URL}}">{{.Title}}</a>
+    </div>
+    <div class="table-list-cell call-date">{{.Startdate}}</div>
+    <div class="table-list-cell call-country">{{.Location}}</div>
+  </li>
+{{end}}
 
-<body>
-	<script type="text/javascript">(function () {
-		if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
-		if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
-			var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-			s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
-			s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
-			var h = d[g]('body')[0];h.appendChild(s); }})();
-    </script>
-	<header><h1>Open Source Conferences</h1></header>
-	<h2><a href="conf-rss.xml">Subscribe to RSS feed</a></h2>
+ <li>
+    <div class="table-list-cell call-days">
+    </div>
+    <div class="table-list-cell">
+      <p><a href="https://github.com/ligurio/oss-events">Are we missing an open CFP?</a></p>
+    </div>
+    <div class="table-list-cell call-form">
+    </div>
+  </li>
+</ul>
 
-	<h2>List of the closest conferences</h2>
-
-	<dl>
-		{{range .}}
-		<dt id="{{.Title}}">
-			<a href="{{.URL}}">{{.Title}}</a>
-		</dt>
-
-		<dd>
-			{{if ne .Location ""}}{{.Location}}{{end}}
-			{{if ne .Startdate ""}}<b>Begin date:</b> {{.Startdate}} {{end}}
-			{{if ne .CFPDate ""}}<b>CFP deadline:</b> {{.CFPDate}} {{end}}
-			{{if ne .CFPURL ""}}<a href="{{.CFPURL}}">Submit a proposal</a>{{end}}
-			<span class="addtocalendar atc-style-blue">
-				<var class="atc_event">
-					<var class="atc_date_start">{{.Startdate}}</var>
-					<var class="atc_date_end">{{.Startdate}}</var>
-					<var class="atc_timezone">Europe/Moscow</var>
-					<var class="atc_title">{{.Title}}</var>
-					<var class="atc_description"></var>
-					<var class="atc_location">{{.Location}}</var>
-					<var class="atc_organizer">Sergey Bronnikov</var>
-					<var class="atc_organizer_email">sergeyb@openvz.org</var>
-				</var>
-			</span>
-
-		</dd>
-		{{end}}
-	</dl>
-
-	<footer>&#169; 2016
-		<a href="https://twitter.com/estet">@estet</a>
-	</footer>
-</body>
+      </div>
+      <footer>
+        <a class="rss" href="/conf-rss.xml">RSS</a>
+      </footer>
+    </div>
+  </body>
 </html>
