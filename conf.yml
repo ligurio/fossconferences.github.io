@@ -311,10 +311,10 @@
 
 - title: nginx.conf
   url: https://www.nginx.com/nginxconf/
-  startdate: 0.09.2016
+  startdate: 07.09.2016
   cfpdate: 05.05.2016
   cfpurl: https://nginxconf16.busyconf.com/proposals/new/
-  location: Austin, TX
+  location: Austin, TX, USA
 
 - title: OSS Weekend Bratislava
   url: http://ossvikend.sk/
@@ -383,11 +383,17 @@
   cfpdate: none
   location: Russia, Moscow
 
-- title: OpenStack Summit
+- title: OpenStack Summit (Spring)
   url: https://www.openstack.org/summit/austin-2016/
   startdate: 25.04.2016
   cfpdate: none
   location: Austin, TX, USA
+
+- title: OpenStack Summit (Autumn)
+  url: https://www.openstack.org/summit/barcelona-2016/
+  startdate: 25.10.2016
+  cfpdate: none
+  location: Barcelona, Spain
 
 - title: Paris OpenSource Summit
   url: http://opensourcesummit.paris/
