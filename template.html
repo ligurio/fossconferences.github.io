@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Find your voice - Call to Speakers</title>
+    <title>Мониторинг событий в мире opensource</title>
     <meta name="author" content="Sergey Bronnikov">
     <meta name="generator" content="some kludgy golang code">
     <meta name="keywords" content="open source, conference">
@@ -19,25 +19,34 @@
     <div id="wrapper">
         <header id="nav">
           <a class="site-title" href="/">
-            <span>Tracking of opensource events</span>
+            <span>Мониторинг событий в мире opensource</span>
           </a>
         </header>
         
       <div id="content">
         
 <ul id="conferences" class="table-list">
+ <li>
+    <div class="table-list-cell call-days">
+	</div>
+    <div class="table-list-cell">
+На этой странице собраны конференции на тему разработки ПО c датами начала этих конференций и датами приёма докладов. Естественно не возможно следить за всеми конференциями, поэтому список включает только те, которые интересны мне. Если какая-то конференция отсутствует, то добавить её можно <a href="https://github.com/ligurio/oss-events">здесь</a>.
+    </div>
+    <div class="table-list-cell call-days">
+	</div>
+  </li>
   <li class="table-list-header">
     <div class="table-list-cell call-days">Closes</div>
     <div class="table-list-cell">Conference</div>
     <div class="table-list-cell call-date">Begin Date</div>
     <div class="table-list-cell call-country">Location</div>
   </li>
-  
-    
+
+
 {{range .}}
   <li class="table-list-row">
     <div class="table-list-cell call-days">
-        {{if and (ne .CFPURL "none") (ne .CFPURL "")}}<a class="call-link" href="{{.CFPURL}}">{{.DaysLeft}}<br>day</a>{{end}}
+        {{if and (ne .CFPURL "none") (ne .CFPURL "") (gt .DaysLeft 0)}}<a class="call-link" href="{{.CFPURL}}">{{.DaysLeft}}<br>day</a>{{end}}
     </div>
     <div class="table-list-cell">
       <a class="call-link" href="{{.URL}}">{{.Title}}</a>
@@ -47,15 +56,6 @@
   </li>
 {{end}}
 
- <li>
-    <div class="table-list-cell call-days">
-    </div>
-    <div class="table-list-cell">
-      <p><a href="https://github.com/ligurio/oss-events">Are we missing an open CFP?</a></p>
-    </div>
-    <div class="table-list-cell call-form">
-    </div>
-  </li>
 </ul>
 
       </div>

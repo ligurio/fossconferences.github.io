@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"sort"
 	"time"
 
 	"github.com/gorilla/feeds"
@@ -44,6 +45,9 @@ func mkHTML(cnf *[]Conf) {
 	if err != nil {
 		panic(err)
 	}
+
+	confs := confs(*cnf)
+	sort.Sort(confs)
 
 	t := template.Must(template.New("tmpl").Parse(string(htmltmpl)))
 	t.Execute(os.Stdout, *cnf)
@@ -98,6 +102,20 @@ func wasThisYear(date string) bool {
 	}
 }
 
+type confs []Conf
+
+func (slice confs) Len() int {
+	return len(slice)
+}
+
+func (slice confs) Less(i, j int) bool {
+	return slice[i].DaysLeft < slice[j].DaysLeft
+}
+
+func (slice confs) Swap(i, j int) {
+	slice[i], slice[j] = slice[j], slice[i]
+}
+
 func main() {
 
 	flag.Usage = func() {
@@ -135,13 +153,15 @@ func main() {
 	}
 
 	now := time.Now()
-	for _, c := range confs {
+	for i, c := range confs {
 		if c.CFPDate != "none" {
 			cfptime, err := time.Parse(timeFormat, c.CFPDate)
 			if err != nil && *format == "" {
 				fmt.Printf("[WARN] Wrong date specified (%s): %s - %s\n", c.CFPDate, c.Title, c.URL)
 			}
+
 			c.DaysLeft = int64(cfptime.Sub(now).Hours() / 24)
+			confs[i].DaysLeft = c.DaysLeft
 
 			if c.DaysLeft == 5 || c.DaysLeft == 10 {
 				closest = append(closest, c)
