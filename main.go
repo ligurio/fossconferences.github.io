@@ -3,14 +3,15 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/gorilla/feeds"
-	"gopkg.in/yaml.v2"
 	"html/template"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
 	"time"
+
+	"github.com/gorilla/feeds"
+	"gopkg.in/yaml.v2"
 )
 
 const (
@@ -18,23 +19,24 @@ const (
 	html       = "template.html"
 	data       = "conf.yml"
 	author     = "Sergey Bronnikov"
-	email      = "sergeyb@openvz.org"
-	url        = "https://bronevichok.ru/ose"
+	email      = "conf@openvz.org"
+	url        = "https://bronevichok.ru/ose/"
 )
 
 type Conf struct {
-	Title     string
-	URL       string
-	Startdate string
-	CFPDate   string
-	CFPURL    string
-	Location  string
+	Title     string // name of the conference
+	URL       string // website
+	Startdate string // date of the first day
+	CFPDate   string // cfp deadline
+	CFPURL    string // url to submit new proposal
+	Location  string // location of the conference
+	DaysLeft  int64  // days left before the end of the cfp deadline
 }
 
 func mkCSV(cnf *[]Conf) {
-	fmt.Printf("Title;URL;Begin date;CFP;CFP URL;Location\n")
+	fmt.Printf("Title;URL;Begin date;CFP;CFP URL;Location;Days left\n")
 	for _, c := range *cnf {
-		fmt.Printf("%s;%s;%s;%s;%s;%s\n", c.Title, c.URL, c.Startdate, c.CFPDate, c.CFPURL, c.Location)
+		fmt.Printf("%s;%s;%s;%s;%s;%s;%d\n", c.Title, c.URL, c.Startdate, c.CFPDate, c.CFPURL, c.Location, c.DaysLeft)
 	}
 }
 func mkHTML(cnf *[]Conf) {
@@ -60,7 +62,7 @@ func mkFeed(cnf *[]Conf, f string) {
 
 	for _, c := range *cnf {
 		conf := feeds.Item{}
-		conf.Title = c.Title
+		conf.Title = "CFP will finish soon: " + c.Title
 		if c.URL != "none" {
 			conf.Link = &feeds.Link{Href: c.URL}
 		}
@@ -125,7 +127,7 @@ func main() {
 	}
 
 	confs := []Conf{}
-	closestConfs := []Conf{}
+	closest := []Conf{}
 
 	err = yaml.Unmarshal(yamlFile, &confs)
 	if err != nil {
@@ -139,11 +141,10 @@ func main() {
 			if err != nil && *format == "" {
 				fmt.Printf("[WARN] Wrong date specified (%s): %s - %s\n", c.CFPDate, c.Title, c.URL)
 			}
-			cfp := int64(cfptime.Sub(now).Hours() / 24)
+			c.DaysLeft = int64(cfptime.Sub(now).Hours() / 24)
 
-			if cfp == 5 || cfp == 10 {
-				c.Title = "CFP will finish soon: " + c.Title
-				closestConfs = append(closestConfs, c)
+			if c.DaysLeft == 5 || c.DaysLeft == 10 {
+				closest = append(closest, c)
 			}
 		} else {
 			if *format == "" && !wasThisYear(c.Startdate) {
@@ -153,9 +154,9 @@ func main() {
 	}
 
 	if *format == "rss" || *format == "atom" {
-		mkFeed(&closestConfs, *format)
+		mkFeed(&closest, *format)
 	} else if *format == "html" {
-		mkHTML(&closestConfs)
+		mkHTML(&confs)
 	} else if *format == "csv" {
 		mkCSV(&confs)
 	}
