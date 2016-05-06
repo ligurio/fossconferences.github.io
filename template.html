@@ -11,7 +11,7 @@
     <meta name="keywords" content="open source, conference">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Tracking of opensource events: Call for speakers and opensource release dates.">
-    <link rel="alternate" type="application/rss+xml" title="Call for speakers RSS Feed" href="/conf-rss.xml">
+    <link rel="alternate" type="application/rss+xml" title="Call for speakers RSS Feed" href="conf-rss.xml">
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://calltospeakers.com/static/css/prefix-style.css">
   </head>
@@ -46,7 +46,7 @@
 {{range .}}
   <li class="table-list-row">
     <div class="table-list-cell call-days">
-        {{if and (ne .CFPURL "none") (ne .CFPURL "") (ne .DaysLeft 1000)}}<a class="call-link" href="{{.CFPURL}}">{{.DaysLeft}}<br>day</a>{{else if ne .DaysLeft 1000 }}{{.DaysLeft}}<br>day{{end}}
+        {{if and (ne .CFPURL "none") (ne .DaysLeft 1000)}}<a class="call-link" href="{{.CFPURL}}">{{.DaysLeft}}<br>day</a>{{else if ne .DaysLeft 1000 }}{{.DaysLeft}}<br>day{{end}}
     </div>
     <div class="table-list-cell">
       <a class="call-link" href="{{.URL}}">{{.Title}}</a>
