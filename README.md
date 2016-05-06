@@ -1,6 +1,6 @@
 # FOSS events tracking
 
-**[Subscribe to RSS feed](https://bronevichok.ru/ose/conf-rss.xml)**
+**[Subscribe to RSS feed](https://bronevichok.ru/ose/conf-rss.xml), [review page](https://bronevichok.ru/ose/)**
 
 Crafted by [Sergey Bronnikov](https://bronevichok.ru/).
 
