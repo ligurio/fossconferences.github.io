@@ -439,8 +439,9 @@
 
 - title: Systemd.Conf
   url: https://systemd.events/
-  startdate: none
-  cfpdate: none
+  startdate: 28.09.2016
+  cfpdate: 01.08.2016
+  cfpurl: https://cfp.systemd.io/en/systemdconf_2016/cfp/session/new
   location: Berlin, Germany
 
 - title: Software Circus
