@@ -47,8 +47,8 @@
 
 - title: ContainerDays Austin
   url: http://www.containerdaysaustin.com/2016/
-  startdate: none
-  cfpdate: none
+  startdate: 27.03.2016
+  cfpdate: 27.03.2016
   location: Austin, TX, USA
 
 - title: ContainerDays Boston
@@ -57,16 +57,10 @@
   cfpdate: 24.03.2016
   location: Boston, MA, USA
 
-- title: ContainerDays NYC
-  url: http://dynamicinfradays.org/
-  startdate: none
-  cfpdate: none
-  location: New York, NY, USA
-
 - title: ContainerDays Hamburg
-  url: http://dynamicinfradays.org/
+  url: http://www.containerdays.de/
   startdate: 27.06.2016
-  cfpdate: none
+  cfpdate: 10.05.2016
   location: Hamburg, Germany
 
 - title: Container Camp SF
@@ -76,13 +70,13 @@
   location: San Francisco, USA
 
 - title: Container Camp London
-  url: https://container.camp/
-  startdate: none
+  url: https://container.camp/ldn/
+  startdate: 09.09.2016
   cfpdate: none
   location: UK, London
 
 - title: Container Camp Sydney
-  url: https://container.camp/
+  url: https://container.camp/syd/
   startdate: none
   cfpdate: none
   location: Sydney, Australia
@@ -136,7 +130,7 @@
 - title: FOSSETCON
   url: http://fossetcon.org/
   startdate: none
-  cfpdate: none
+  cfpdate: 10.05.2016
   location: none
 
 - title: FLOSS Community Metrics Meeting
