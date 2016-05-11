@@ -51,7 +51,7 @@
     <div class="table-list-cell">
       <a class="call-link" href="{{.URL}}">{{.Title}}</a>
     </div>
-    <div class="table-list-cell call-date">{{.Startdate}}</div>
+    <div class="table-list-cell call-date">{{if (eq .Startdate "none")}}not planned{{else}}{{.Startdate}}{{end}}</div>
     <div class="table-list-cell call-country">{{.Location}}</div>
   </li>
 {{end}}
