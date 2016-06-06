@@ -141,8 +141,9 @@
 
 - title: FOSSCON
   url: http://fosscon.us/
-  startdate: none
-  cfpdate: none
+  startdate: 20.08.2016
+  cfpdate: 20.08.2016
+  cfpurl: http://fosscon.us/node/add/speakersub
   location: Philadelphia, PA, USA
 
 - title: German OpenStack Day
@@ -294,14 +295,15 @@
 
 - title: LVEE
   url: https://lvee.org/
-  startdate: none
-  cfpdate: none
+  startdate: 25.08.2016
+  cfpdate: 30.07.2016
+  cfpurl: https://lvee.org/en/users/new
   location: Belarus, Grodno
 
 - title: LVEE Winter
   url: https://lvee.org/
   startdate: 12.02.2016
-  cfpdate: none
+  cfpdate: https://lvee.org/en/users/new
   location: Belarus, Grodno
 
 - title: nginx.conf
@@ -375,8 +377,8 @@
 
 - title: OSday
   url: http://osday.ru/
-  startdate: none
-  cfpdate: none
+  startdate: 09.06.2016
+  cfpdate: 09.06.2016
   location: Russia, Moscow
 
 - title: OpenStack Summit (Spring)
