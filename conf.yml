@@ -390,7 +390,8 @@
 - title: OpenStack Summit (Autumn)
   url: https://www.openstack.org/summit/barcelona-2016/
   startdate: 25.10.2016
-  cfpdate: none
+  cfpdate: 13.07.2016
+  cfpurl: https://www.openstack.org/summit/barcelona-2016/call-for-presentations/
   location: Barcelona, Spain
 
 - title: Paris OpenSource Summit
