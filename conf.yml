@@ -1,9 +1,23 @@
+- title: AsiaBSDCon
+  url: https://asiabsdcon.org/
+  startdate: 10.03.2016
+  cfpdate: 31.12.2015
+  cfpurl: https://2016.asiabsdcon.org/cfp.html.en
+  location: Tokyo, Japan
+
 - title: All things open
   url: http://allthingsopen.org/
   startdate: 26.10.2016
   cfpdate: 15.04.2016
   cfpurl: http://allthingsopen.org/call-for-speakers/
   location: Raleigh, NC, USA
+
+- title: BSDCan
+  url: https://www.bsdcan.org/
+  startdate: 10.06.2016
+  cfpdate: 01.12.2015
+  cfpurl: https://www.bsdcan.org/2016/papers.php
+  location: Ottawa, USA
 
 - title: CodeFest
   url: http://codefest.ru/
@@ -107,6 +121,13 @@
   cfpdate: none
   location: Ekaterinburg, Russia
 
+- title: EuroBSDcon
+  url: https://eurobsdcon.org/
+  startdate: 22.09.2016
+  cfpdate: 08.05.2016
+  cfpurl: https://2016.eurobsdcon.org/call-for-papers/
+  location: Belgrade, Serbia
+
 - title: FOSS4G North America
   url: https://2016.foss4g-na.org/
   startdate: 02.05.2016
@@ -152,6 +173,13 @@
   cfpdate: 31.03.2016
   cfpurl: https://openstack-tage.de/call-for-papers/
   location: Cologne, Germany
+
+- title: Google Test Automation Conference (GTAC)
+  url: https://developers.google.com/google-test-automation-conference/
+  startdate: 15.11.2016
+  cfpdate: 01.06.2016
+  cfpurl: https://developers.google.com/google-test-automation-conference/2016/#gtac-2016-save-the-date
+  location: Google’s campus, Sunnyvale, California, USA
 
 - title: HappyDev
   url: http://happydev.ru/
@@ -306,12 +334,26 @@
   cfpdate: https://lvee.org/en/users/new
   location: Belarus, Grodno
 
+- title: MeetBSD
+  url: http://meetbsd.org/
+  startdate: none
+  cfpdate: none
+  cfpurl: none
+  location: Cracow, Warsaw
+
 - title: nginx.conf
   url: https://www.nginx.com/nginxconf/
   startdate: 07.09.2016
   cfpdate: 05.05.2016
   cfpurl: https://nginxconf16.busyconf.com/proposals/new/
   location: Austin, TX, USA
+
+- title: NYCBSDCon
+  url: http://www.nycbsdcon.org/
+  startdate: 08.02.2014
+  cfpdate: 17.12.2014
+  cfpurl: http://www.nycbsdcon.org/2014/cfp.html
+  location: New York, NY, USA
 
 - title: OSS Weekend Bratislava
   url: http://ossvikend.sk/
@@ -480,46 +522,18 @@
   cfpurl: http://whalerider.ru/2016/speakers
   location: Moscow, Russia
 
-- title: AsiaBSDCon
-  url: https://asiabsdcon.org/
-  startdate: 10.03.2016
-  cfpdate: 31.12.2015
-  cfpurl: https://2016.asiabsdcon.org/cfp.html.en
-  location: Tokyo, Japan
-
-- title: EuroBSDcon
-  url: https://eurobsdcon.org/
-  startdate: 22.09.2016
-  cfpdate: 08.05.2016
-  cfpurl: https://2016.eurobsdcon.org/call-for-papers/
-  location: Belgrade, Serbia
-
-- title: BSDCan
-  url: https://www.bsdcan.org/
-  startdate: 10.06.2016
-  cfpdate: 01.12.2015
-  cfpurl: https://www.bsdcan.org/2016/papers.php
-  location: Ottawa, USA
-
 - title: vBSDcon
   url: https://www.verisign.com/en_US/internet-technology-news/verisign-events/vbsdcon/index.xhtml
   startdate: 11.09.2015
   cfpdate: 11.09.2015
   location: none
 
-- title: NYCBSDCon
-  url: http://www.nycbsdcon.org/
-  startdate: 08.02.2014
-  cfpdate: 17.12.2014
-  cfpurl: http://www.nycbsdcon.org/2014/cfp.html
-  location: New York, NY, USA
-
-- title: MeetBSD
-  url: http://meetbsd.org/
-  startdate: none
-  cfpdate: none
-  cfpurl: none
-  location: Cracow, Warsaw
+- title: ZeroNights
+  url: http://2016.zeronights.org/
+  startdate: 17.11.2016
+  cfpdate: 01.10.2016
+  cfpurl: http://2016.zeronights.ru/news/vnimanie-call-for-papers/#more-101
+  location: Moscow, Russia
 
 - title: Стачка
   url: http://nastachku.ru/
