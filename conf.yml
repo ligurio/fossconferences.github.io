@@ -448,6 +448,12 @@
   cfpdate: none
   location: Columbia, SC, USA
 
+- title: Proxtalks
+  url: https://proxtalks.de/
+  startdate: 11.10.2016
+  cfpdate: none
+  location: Berlin, Germany
+
 - title: RedHat Summit
   url: https://www.redhat.com/en/summit
   startdate: 27.06.2016
