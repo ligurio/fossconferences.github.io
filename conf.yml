@@ -501,6 +501,12 @@
   cfpdate: 01.09.2016
   location: Amsterdam
 
+- title: State of the map
+  url: http://2016.stateofthemap.org/
+  startdate: 23.09.2016
+  cfpdate: none
+  location: Brussels, Belgium
+
 - title: T-Dose
   url: http://t-dose.org/2015/speakers
   startdate: 12.11.2016
