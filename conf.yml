@@ -253,7 +253,8 @@
 - title: Linux.conf.au
   url: http://hobart.lca2017.org/
   startdate: 16.01.2017
-  cfpdate: none
+  cfpdate: 05.08.2016
+  cfpurl: https://linux.conf.au/proposals/
   location: Hobart, Australia
 
 - title: LinuxCon Europe
