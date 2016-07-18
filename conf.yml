@@ -78,19 +78,19 @@
   location: Hamburg, Germany
 
 - title: Container Camp SF
-  url: https://container.camp/
+  url: https://container.camp/usa/2016
   startdate: 15.04.2016
   cfpdate: 15.04.2016
   location: San Francisco, USA
 
 - title: Container Camp London
-  url: https://container.camp/ldn/
+  url: https://container.camp/uk/2016
   startdate: 09.09.2016
   cfpdate: none
   location: UK, London
 
 - title: Container Camp Sydney
-  url: https://container.camp/syd/
+  url: https://container.camp/au/2017
   startdate: none
   cfpdate: none
   location: Sydney, Australia
