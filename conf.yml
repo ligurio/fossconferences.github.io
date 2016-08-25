@@ -560,9 +560,16 @@
   startdate: 19.07.2016
   location: Altair Engineering, 1820 E. Big Beaver Rd. Troy MI 48083
 
-- title: OPEN SOURCE AND LINUX CONFERENCE
+- title: Open source and Linux conference
   url: http://osdn.org.ua/
   startdate: 17.09.2016
   cfpdate: 09.09.2016
   cfpurl: http://osdn.org.ua/
   location: Kyiv, Ukraine
+
+- title: Гейзенбаг
+  url: http://heisenbug.ru/
+  startdate: 10.12.2016
+  cfpdate: 19.09.2016
+  cfpurl: http://heisenbug.ru/callforpapers/
+  location: Moscow, Russia
