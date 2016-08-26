@@ -337,10 +337,10 @@
 
 - title: MeetBSD
   url: http://meetbsd.org/
-  startdate: none
+  startdate: 11.11.2016
   cfpdate: none
   cfpurl: none
-  location: Cracow, Warsaw
+  location: UC Berkeley’s Clark Kerr Campus
 
 - title: nginx.conf
   url: https://www.nginx.com/nginxconf/
@@ -573,3 +573,10 @@
   cfpdate: 19.09.2016
   cfpurl: http://heisenbug.ru/callforpapers/
   location: Moscow, Russia
+
+- title: Ohio LinuxFest
+  url: https://ohiolinux.org/
+  startdate: 07.10.2016
+  cfpdate: none
+  cfpurl: none
+  location: The Hyatt regency Columbus, Ohio
