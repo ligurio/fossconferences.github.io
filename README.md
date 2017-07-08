@@ -9,7 +9,7 @@ Crafted by [Sergey Bronnikov](https://bronevichok.ru/).
 
 ---
 
-[![Build Status](https://travis-ci.org/ligurio/oss-events.svg?branch=master)](https://travis-ci.org/ligurio/oss-events)
+[![Build Status](https://travis-ci.org/ligurio/fossconferences.github.io?branch=master)](https://travis-ci.org/ligurio/fossconferences.github.io)
 
 ## Contributing Guidelines
 
@@ -17,7 +17,8 @@ The list of events is driven by files in the ```_data``` folder - if you have
 an update for those things, just change the ```current.yml``` and
 ```past.yml``` files and send a PR.
 
-  - The _order_ of the events listed in ```current.yml``` and ```past.yml``` dictates the _order_ displayed, please make sure to properly insert events.
+  - The _order_ of the events listed in ```current.yml``` and ```past.yml```
+  dictates the _order_ displayed, please make sure to properly insert events.
   - If possible, spell out the conference name and add the abbreviation. Otherwise just use the abbreviation:
     - Example: Workshop on Performance and Reliability (WOPR)
   - Include the year
@@ -39,10 +40,8 @@ an update for those things, just change the ```current.yml``` and
 * [LWN](https://lwn.net/Calendar/)
 * [OpenSource.com](https://opensource.com/resources/conferences-and-events-monthly)
 * Twitter lists: [@estet](https://twitter.com/estet/lists/foss-conferences), [@jakerella](https://twitter.com/jakerella/lists/conferences/members)
-* [Call to speakers](https://calltospeakers.com/)
 * [Lanyrd](http://lanyrd.com/calls/)
 * https://github.com/bamos/conference-tracker
-* [BSD events](http://www.bsdevents.org/)
 * [Wikipedia](https://en.wikipedia.org/wiki/List_of_computer_science_conferences)
 * [RichardLitt/awesome-conferences](https://github.com/RichardLitt/awesome-conferences)
 * [PlanetRuby/awesome-events](https://github.com/planetruby/awesome-events)
