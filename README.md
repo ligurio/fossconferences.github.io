@@ -1,6 +1,9 @@
 # FOSS events tracking
 
-**[Subscribe to RSS feed](https://bronevichok.ru/ose/conf-rss.xml), [review page](https://bronevichok.ru/ose/)**
+This is a simple list of free and opensource software conferences and workshops
+published collaboratively with the community.
+
+**[Subscribe to RSS feed](https://bronevichok.ru/ose/conf-rss.xml)**
 
 Crafted by [Sergey Bronnikov](https://bronevichok.ru/).
 
@@ -8,16 +11,26 @@ Crafted by [Sergey Bronnikov](https://bronevichok.ru/).
 
 [![Build Status](https://travis-ci.org/ligurio/oss-events.svg?branch=master)](https://travis-ci.org/ligurio/oss-events)
 
-## Sources about OS release dates
+## Contributing Guidelines
 
-* CentOS: [Releases](https://wiki.centos.org/About/Product)
-* Debian: [Releases](https://wiki.debian.org/DebianReleases)
-* [DistroWatch](http://distrowatch.com/weekly.php?issue=20150727#upcoming)
-* Fedora: [Releases](https://fedoraproject.org/wiki/Releases), [EOL](https://fedoraproject.org/wiki/End_of_life)
-* FreeBSD: [Releases](), [Release Schedule](https://www.freebsd.org/releng/)
-* OpenSUSE: [Releases](https://en.opensuse.org/openSUSE:Roadmap), [Lifetime](https://en.opensuse.org/Lifetime)
-* RHEL: [Releases](https://access.redhat.com/articles/3078)
-* Ubuntu: [Releases](https://wiki.ubuntu.com/Releases), [Development Codenames](https://wiki.ubuntu.com/DevelopmentCodeNames)
+The list of events is driven by files in the ```_data``` folder - if you have
+an update for those things, just change the ```current.yml``` and
+```past.yml``` files and send a PR.
+
+  - The _order_ of the events listed in ```current.yml``` and ```past.yml``` dictates the _order_ displayed, please make sure to properly insert events.
+  - If possible, spell out the conference name and add the abbreviation. Otherwise just use the abbreviation:
+    - Example: Workshop on Performance and Reliability (WOPR)
+  - Include the year
+    - Sometimes workshops use a version instead of a the year
+      - Example: Workshop on Performance and Reliability (WOPR) 24
+  - Don't include the @ symbol for the twitter handle. If there is no twitter option, leave it blank
+  - Optionally include a status such as:
+    - CFP is open (CFP == Call for Proposal)
+    - CFP is closed
+    - Registration is open
+    - Registration is closed
+  - Optionally include a link to a conference video playlist. This will only appear for past conferences and can be added directly to the ```past.yml``` file. 
+    - These should be videos from the conference presentations or talks. No marketing videos please.  
 
 
 ## Sources about opensource conferences
@@ -34,9 +47,3 @@ Crafted by [Sergey Bronnikov](https://bronevichok.ru/).
 * [RichardLitt/awesome-conferences](https://github.com/RichardLitt/awesome-conferences)
 * [PlanetRuby/awesome-events](https://github.com/planetruby/awesome-events)
 * [WikiCFP: CS](http://www.wikicfp.com/cfp/call?conference=computer%20science)
-
-## Build
-
-``
-export GO386=387; export GOARCH=386; export GOOS=openbsd; go build -o oss
-``
