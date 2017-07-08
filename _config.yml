@@ -1,11 +1,11 @@
 # Site settings
-title: Software Testing Conferences
-email: ckenst@kenst.com
-description: A simple list of software testing conferences and workshops, published collaboratively with the software testing community.
+title: FOSS events
+email: estetus@gmail.com
+description: A simple list of FOSS conferences and workshops, published collaboratively with community.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://testingconferences.org" # the base hostname & protocol for your site
-twitter_username: ckenst
-github_username: TestingConferences
+url: "https://fossconferences.github.io/" # the base hostname & protocol for your site
+twitter_username: estet
+github_username: ligurio
 
 # Build settings
 markdown: kramdown
