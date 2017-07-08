@@ -9,8 +9,8 @@ install:
   - sudo apt-get install python-pip python-dev build-essential
   - sudo pip install pykwalify
 
-script:
-  - pykwalify --data-file conf.yml --schema-file schema.yaml
+#script:
+#  - pykwalify --data-file conf.yml --schema-file schema.yaml
 
 notifications:
   email: sergeyb@openvz.org
