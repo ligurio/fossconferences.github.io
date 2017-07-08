@@ -1,0 +1,394 @@
+- name: AsiaBSDCon
+  url: https://asiabsdcon.org/
+  dates: 10.03.2016
+  location: Tokyo, Japan
+
+- name: All things open
+  url: http://allthingsopen.org/
+  dates: 26.10.2016
+  location: Raleigh, NC, USA
+
+- name: BSDCan
+  url: https://www.bsdcan.org/
+  dates: 10.06.2016
+  location: Ottawa, USA
+
+- name: Collaboration Summit
+  url: http://events.linuxfoundation.org/events/collaboration-summit
+  dates: 29.03.2016
+  location: Lake Tahoe, CA, USA
+
+- name: Conferencia Internacional de Software Libre
+  url: http://www.cubaconf.org/
+  dates: 25.04.2016
+  location: Havana, Cuba
+
+- name: ContainerCon Japan
+  url: http://events.linuxfoundation.org/events/containercon-japan
+  dates: 13.06.2016
+  location: Tokyo, Japan
+
+- name: ContainerCon Europe
+  url: http://events.linuxfoundation.org/events/containercon-europe
+  dates: 04.10.2016
+  location: Berlin, Germany
+
+- name: ContainerSched
+  url: https://skillsmatter.com/conferences/7208-containersched-2015
+  dates: 19.10.2016
+  location: London, UK
+
+- name: ContainerDays Austin
+  url: http://www.containerdaysaustin.com/2016/
+  dates: 27.03.2016
+  location: Austin, TX, USA
+
+- name: ContainerDays Boston
+  url: http://dynamicinfradays.org/events/2016-boston/
+  dates: 24.05.2016
+  location: Boston, MA, USA
+
+- name: ContainerDays Hamburg
+  url: http://www.containerdays.de/
+  dates: 27.06.2016
+  location: Hamburg, Germany
+
+- name: Container Camp SF
+  url: https://container.camp/usa/2016
+  dates: 15.04.2016
+  location: San Francisco, USA
+
+- name: Container Camp London
+  url: https://container.camp/uk/2016
+  dates: 09.09.2016
+  location: UK, London
+
+- name: Container Camp Sydney
+  url: https://container.camp/au/2017
+  dates: none
+  location: Sydney, Australia
+
+- name: DevNation
+  url: http://www.devnation.org/
+  dates: 26.06.2016
+  location: SF, CA, USA
+
+- name: DevConf.cz
+  url: http://devconf.cz/
+  dates: 05.02.2016
+  location: Czech republic, Brno
+
+- name: DockerCon
+  url: http://dockercon.com/
+  dates: 19.06.2016
+  location: Seattle, WA, USA
+
+- name: EuroBSDcon
+  url: https://eurobsdcon.org/
+  dates: 22.09.2016
+  location: Belgrade, Serbia
+
+- name: FOSS4G North America
+  url: https://2016.foss4g-na.org/
+  dates: 02.05.2016
+  location: Raleigh, NC, USA
+
+- name: FOSDEM
+  url: https://fosdem.org/
+  dates: 30.01.2016
+  location: Belgium, Brussels
+
+- name: FOSSASIA
+  url: http://fossasia.org/
+  dates: 18.03.2016
+  location: Singapore
+
+- name: FOSSETCON
+  url: http://fossetcon.org/
+  dates: none
+  location: none
+
+- name: FLOSS Community Metrics Meeting
+  url: http://flosscommunitymetrics.org/
+  dates: 15.05.2016
+  location: Austin, TX, USA
+
+- name: FOSSCON
+  url: http://fosscon.us/
+  dates: 20.08.2016
+  location: Philadelphia, PA, USA
+
+- name: German OpenStack Day
+  url: https://openstack-tage.de/
+  dates: 22.06.2016
+  location: Cologne, Germany
+
+- name: Highload
+  url: http://www.highload.ru/
+  dates: 02.11.2016
+  location: Moscow, Russia
+
+- name: Highload Junior
+  url: http://junior.highload.ru/
+  dates: 19.05.2016
+  location: Moscow, Russia
+
+- name: Hong Kong Open Source Conference
+  url: http://opensource.hk/
+  dates: 24.06.2016
+  location: Hong Kong
+
+- name: International Conference on Open Source Systems
+  url: http://oss2016.org/
+  dates: none
+  location: Germany, Gothenburg
+
+- name: ISDEF
+  url: http://www.isdef.org/ru/conference/
+  dates: 21.04.2016
+  location: Kazan, Russia
+
+- name: Kernel recipes
+  url: https://kernel-recipes.org/
+  dates: 28.09.2016
+  location: Paris, France
+
+- name: KubeCon
+  url: https://kubecon.io/
+  dates: 10.03.2016
+  location: London, UK
+
+- name: KVM Forum
+  url: http://events.linuxfoundation.org/events/kvm-forum
+  dates: 24.08.2016
+  location: Toronto, Canada
+
+- name: LibrePlanet
+  url: https://www.libreplanet.org/
+  dates: 19.03.2016
+  location: Cambridge, Massachusetts
+
+- name: Linux.conf.au
+  url: http://hobart.lca2017.org/
+  dates: 16.01.2017
+  location: Hobart, Australia
+
+- name: LinuxCon Europe
+  url: http://events.linuxfoundation.org/events/linuxcon-europe
+  dates: 04.10.2016
+  location: Berlin, Germany
+
+- name: LinuxCon North America
+  url: http://events.linuxfoundation.org/events/linuxcon-north-america
+  dates: 22.08.2016
+  location: Toronto, Canada
+
+- name: LinuxCon Japan
+  url: http://events.linuxfoundation.org/events/linuxcon-japan
+  dates: 13.06.2016
+  location: Tokyo, Japan
+
+- name: LinuxFest
+  url: https://ru.wikipedia.org/wiki/LinuxFest
+  dates: none
+  location: none
+
+- name: LinuxFest Northwest
+  url: http://linuxfestnorthwest.org/
+  dates: 23.04.2016
+  location: Bellingham, WA, USA
+
+- name: Linux Plumbers
+  url: http://www.linuxplumbersconf.org/
+  dates: 02.11.2016
+  location: Santa Fe, NM, USA
+
+- name: Linux Tage
+  url: https://chemnitzer.linux-tage.de/
+  dates: 19.03.2016
+  location: Germany
+
+- name: Linux Storage, Filesystem and Memory Management Summit
+  url: http://events.linuxfoundation.org/events/linux-storage-filesystem-and-mm-summit
+  dates: 18.04.2016
+  location: Raleigh, NC, USA
+
+- name: Linux Kernel Summit
+  url: http://events.linuxfoundation.org/events/linux-kernel-summit
+  dates: 31.10.2016
+  location: Santa Fe, NM, USA
+
+- name: Linuxwochen
+  url: https://www.linuxwochen.at/
+  dates: 28.04.2016
+  location: Vienna, Austria
+
+- name: LVEE
+  url: https://lvee.org/
+  dates: 25.08.2016
+  location: Belarus, Grodno
+
+- name: LVEE Winter
+  url: https://lvee.org/
+  dates: 12.02.2016
+  location: Belarus, Grodno
+
+- name: MeetBSD
+  url: http://meetbsd.org/
+  dates: 11.11.2016
+  location: UC Berkeley’s Clark Kerr Campus
+
+- name: nginx.conf
+  url: https://www.nginx.com/nginxconf/
+  dates: 07.09.2016
+  location: Austin, TX, USA
+
+- name: NYCBSDCon
+  url: http://www.nycbsdcon.org/
+  dates: 08.02.2014
+  location: New York, NY, USA
+
+- name: OSS Weekend Bratislava
+  url: http://ossvikend.sk/
+  dates: 09.04.2016
+  location: Bratislava
+
+- name: OSCAL (Open Source Conference Albania)
+  url: http://oscal.openlabs.cc/
+  dates: 15.05.2016
+  location: Tirana, Albania
+
+- name: OpenSource Bridge
+  url: http://opensourcebridge.org/
+  dates: 21.06.2016
+  location: Portland, OR, USA
+
+- name: Open Source Day
+  url: http://opensourceday.com/
+  dates: 26.04.2016
+  location: Warsaw, Poland
+
+- name: OpenWest
+  url: http://www.openwest.org/
+  dates: 13.07.2016
+  location: Sandy, UT, USA
+
+- name: OpenSym
+  url: http://www.opensym.org/
+  dates: 17.08.2016
+  location: Berlin, Germany
+
+- name: OSCON Austin
+  url: http://www.oscon.com/
+  dates: 16.05.2016
+  location: Austin, TX, USA
+
+- name: OSDC
+  url: https://www.netways.de/en/events_trainings/osdc/overview/
+  dates: 26.04.2016
+  location: Berlin, Germany
+
+- name: OSCON London
+  url: http://www.oscon.com/
+  dates: 17.10.2016
+  location: UK, London
+
+- name: OSday
+  url: http://osday.ru/
+  dates: 09.06.2016
+  location: Russia, Moscow
+
+- name: OpenStack Summit (Spring)
+  url: https://www.openstack.org/summit/austin-2016/
+  dates: 25.04.2016
+  location: Austin, TX, USA
+
+- name: OpenStack Summit (Autumn)
+  url: https://www.openstack.org/summit/barcelona-2016/
+  dates: 25.10.2016
+  location: Barcelona, Spain
+
+- name: Paris OpenSource Summit
+  url: http://opensourcesummit.paris/
+  dates: 18.11.2016
+  location: Paris, France
+
+- name: POSSCON
+  url: http://posscon.org/
+  dates: 04.04.2017
+  location: Columbia, SC, USA
+
+- name: Proxtalks
+  url: https://proxtalks.de/
+  dates: 11.10.2016
+  location: Berlin, Germany
+
+- name: RedHat Summit
+  url: https://www.redhat.com/en/summit
+  dates: 27.06.2016
+  location: SF, CA, USA
+
+- name: RootConf
+  url: http://rootconf.ru/
+  dates: 21.05.2016
+  location: Moscow, Russia
+
+- name: SECR
+  url: http://secr.ru/
+  dates: 28.10.2016
+  location: Russia, Moscow
+
+- name: SCALE14x
+  url: http://www.socallinuxexpo.org/scale/14x
+  dates: 21.01.2016
+  location: Pasadena, CA, USA
+
+- name: Systemd.Conf
+  url: https://systemd.events/
+  dates: 28.09.2016
+  location: Berlin, Germany
+
+- name: Software Circus
+  url: http://www.softwarecircus.io/
+  dates: 01.09.2016
+  location: Amsterdam
+
+- name: State of the map
+  url: http://2016.stateofthemap.org/
+  dates: 23.09.2016
+  location: Brussels, Belgium
+
+- name: T-Dose
+  url: http://t-dose.org/2015/speakers
+  dates: 12.11.2016
+  location: Eindhoven, Netherlands
+
+- name: Texas Linux Fest
+  url: https://texaslinuxfest.org/
+  dates: 08.07.2016
+  location: Austin, TX, USA
+
+- name: TÜBIX
+  url: http://www.tuebix.org/
+  dates: 11.06.2016
+  location: Austin, TX, USA
+
+- name: vBSDcon
+  url: https://www.verisign.com/en_US/internet-technology-news/verisign-events/vbsdcon/index.xhtml
+  dates: 11.09.2015
+  location: none
+
+- name: Semibug
+  url: http://semibug.org/
+  dates: 19.07.2016
+  location: Altair Engineering, 1820 E. Big Beaver Rd. Troy MI 48083
+
+- name: Open source and Linux conference
+  url: http://osdn.org.ua/
+  dates: 17.09.2016
+  location: Kyiv, Ukraine
+
+- name: Ohio LinuxFest
+  url: https://ohiolinux.org/
+  dates: 07.10.2016
+  location: The Hyatt regency Columbus, Ohio
