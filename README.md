@@ -46,3 +46,5 @@ an update for those things, just change the ```current.yml``` and
 * [RichardLitt/awesome-conferences](https://github.com/RichardLitt/awesome-conferences)
 * [PlanetRuby/awesome-events](https://github.com/planetruby/awesome-events)
 * [WikiCFP: CS](http://www.wikicfp.com/cfp/call?conference=computer%20science)
+* http://www.fossevents.in/ ([sources](https://github.com/sunu/fossevents)
+* http://calagator.org/
